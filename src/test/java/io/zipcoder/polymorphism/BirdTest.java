@@ -1,26 +1,25 @@
 package io.zipcoder.polymorphism;
 
-import org.junit.Assert;
 import org.junit.Test;
+import org.junit.Assert;
 
-public class CatTest {
+public class BirdTest {
     @Test
     public void speakTest() {
-        Cat testCat = new Cat("Jinga");
-        String expected = "meow";
-        String actual = testCat.speak();
+        Bird testBird = new Bird("Pinky");
+        String expected = "chirp";
+        String actual = testBird.speak();
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void nameTest(){
         // Given
-        Cat testCat = new Cat("Dinga");
+        Bird testBird = new Bird("Blooky");
         String expectedName = "Blooky";
         // When
-        String actualName = testCat.getName();
+        String actualName = testBird.getName();
         // Then
         Assert.assertEquals(expectedName, actualName);
     }
-
 }

@@ -2,7 +2,7 @@ package io.zipcoder.polymorphism;
 
 public class Dog extends Pet{
 
-    Dog()
+    Dog(String name)
     {
 
     }
