@@ -7,7 +7,7 @@ public class DogTest {
     @Test
     public void speakTest() {
         Dog testDog = new Dog("Blacky");
-        String expected = "meow";
+        String expected = "woof";
         String actual = testDog.speak();
         Assert.assertEquals(expected, actual);
     }

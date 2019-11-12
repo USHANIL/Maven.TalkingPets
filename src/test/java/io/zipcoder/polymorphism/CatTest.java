@@ -21,7 +21,7 @@ public class CatTest {
         // When
         String actualName = testCat.getName();
         // Then
-        Assert.assertEquals(expectedName, actualName);
+        Assert.assertNotEquals(expectedName, actualName);
     }
 
 }

@@ -1,23 +1,24 @@
 package io.zipcoder.polymorphism;
 
 public class Cat extends Pet {
-    public void setCatName(String catName) {
-        this.catName = catName;
-    }
-
     private String catName;
-
-    public String getCatName() {
-        return catName;
-    }
-
     Cat(String name)
     {
         catName = name;
     }
 
+    public void setCatName(String catName) {
+        this.catName = catName;
+    }
+
+    public String getName() {
+        return catName;
+    }
+
+
+
     public String speak()
     {
-        return "Meowwwww";
+        return "meow";
     }
 }

@@ -2,13 +2,12 @@ package io.zipcoder.polymorphism;
 
 public class Bird extends Pet{
 private String birdsName;
+
     public void setBirdsName(String name) {
-
-
         this.birdsName = birdsName;
     }
 
-    public String getBirdsName() {
+    public String getName() {
 
         return birdsName;
     }
@@ -17,6 +16,6 @@ private String birdsName;
         this.birdsName = birdsName;
     }
     public String speak(){
-        return "tweet";
+        return "chirp";
     }
 }
