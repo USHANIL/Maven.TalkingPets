@@ -79,7 +79,7 @@ public static  void  main(String[]args)
         for (int i=0 ; i<petsList.size(); i++) {
             //console.println(petsList.get(i).getName());
             //console.println(petsList.get(i).speak());
-            console.println("hey your pets name is %s and he says %s ",petsList.get(i).getName(),petsList.get(i).speak());
+            console.println("hey your pet  has name  %s and he says %s ",petsList.get(i).getName(),petsList.get(i).speak());
         }
 
 
