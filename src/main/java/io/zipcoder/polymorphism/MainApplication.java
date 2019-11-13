@@ -19,6 +19,8 @@ public class MainApplication {
     private Bird bird;
     ArrayList<Pet> petsList = new ArrayList<Pet>();
 
+
+
 public static  void  main(String[]args)
 {
     MainApplication ma = new MainApplication();
@@ -79,7 +81,9 @@ public static  void  main(String[]args)
         for (int i=0 ; i<petsList.size(); i++) {
             //console.println(petsList.get(i).getName());
             //console.println(petsList.get(i).speak());
-            console.println("hey your pet  has name  %s and he says %s ",petsList.get(i).getName(),petsList.get(i).speak());
+
+            console.println(" Your pet %s has name  %s and he says %s ",petsList.get(i).getClass().getSimpleName(),petsList.get(i).getName(),petsList.get(i).speak());
+            //console.println("you have a pet %s",petsList.get(i).getClass().getSimpleName());
         }
 
 
