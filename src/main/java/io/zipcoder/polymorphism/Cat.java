@@ -2,12 +2,24 @@ package io.zipcoder.polymorphism;
 
 public class Cat extends Pet {
     private String catName;
-    Cat(String name)
-    {
-        catName = name;
+    private Integer catAge;
+
+    public void setAge(Integer catAge) {
+        this.catAge = catAge;
     }
 
-    public void setCatName(String catName) {
+    public Integer getAge() {
+        return catAge;
+    }
+
+    Cat(String name,Integer age)
+    {
+        catName = name;
+        catAge= age;
+
+    }
+
+    public void setName(String catName) {
         this.catName = catName;
     }
 
@@ -20,5 +32,10 @@ public class Cat extends Pet {
     public String speak()
     {
         return "meow";
+    }
+
+    @Override
+    public int compareTo(Pet o) {
+        return 0;
     }
 }
